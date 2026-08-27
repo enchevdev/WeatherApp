@@ -9,6 +9,13 @@
             Console.WriteLine("Press Enter To Continue...");
 
             Console.ReadLine();
+
+
+            Console.WriteLine("Enter city:");
+
+            string city = Console.ReadLine();
+
+
         }
     }
 }
