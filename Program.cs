@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("WEATHER APP");
+
+            Console.WriteLine("Press Enter To Continue...");
+
+            Console.ReadLine();
         }
     }
 }
