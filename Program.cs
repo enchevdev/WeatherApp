@@ -15,7 +15,7 @@
 
             string city = Console.ReadLine();
 
-
+            HttpClient client = new HttpClient();
         }
     }
 }
