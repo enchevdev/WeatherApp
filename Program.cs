@@ -16,6 +16,15 @@
             string city = Console.ReadLine();
 
             HttpClient client = new HttpClient();
+
+            GetWeatherAsync(client, city).Wait();
+        }
+
+        public static async Task GetWeatherAsync(HttpClient client, string city)
+        {
+            
+            string response = await client.GetStringAsync($"https://geocoding-api.open-meteo.com/v1/search?name={city}");
+            Console.WriteLine(response);
         }
     }
 }
